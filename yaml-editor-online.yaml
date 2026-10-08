@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: test
+
+Resources:
+  DemoBucket:
+    Type: AWS::S3::Bucket
+
+Outputs:
+  EnvironmentName:
+    Value: !Ref Environment
